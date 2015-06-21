@@ -1,3 +1,8 @@
+---
+---
+
+$container-width: 770px;
+
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
 body {
@@ -6,7 +11,7 @@ body {
 }
 
 #container {
-	width: 770px;
+	width: $container-width;
 	margin: 0 auto;
 	padding: 0 100px;
 }
@@ -47,26 +52,26 @@ ul {
 	line-height: 1.75em;
 	margin: 0 0 3.5em 0;
 	padding: 0;
-}
 
-li {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
+	li {
+		margin: 0;
+		padding: 0;
+		width: 100%;
 
-li a {
-	text-decoration: none;
-	color: #aaa;
-}
+		a {
+			text-decoration: none;
+			color: #aaa;
 
-li a:visited {
-	color: #aaa;	
-}
+			&:visited{
+				color: #aaa;	
+			}
 
-li a:hover {
-	color: black;
- 	background-color: #ddd;
+			&:hover {
+				color: black;
+				background-color: #ddd;
+			}
+		}
+	}
 }
 
 .selected {
