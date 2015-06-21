@@ -1,7 +1,9 @@
 ---
 ---
 
-$container-width: 970px;
+$container-mobile-width: 100%;
+$container-tablet-width: 800px;
+$container-desktop-width: 970px;
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
@@ -11,13 +13,11 @@ body {
 }
 
 #container {
-	width: $container-width;
+	width: $container-mobile-width;
 	margin: 0 auto;
-	padding: 0 100px;
 }
 
-#sidebar {
-	float: left;
+.sidebar {
 	margin: 0 100px 0 0;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -26,22 +26,14 @@ body {
 	padding: 0;
 }
 
-#sidebar img {
+.sidebar img {
 	width: 120px;
 	border-radius: 5%;
 }
 
-#main {
-	float: left;
-	width: 540px;
-}
-
-#footer {
+.footer {
 	clear: both;
 	color: #ccc;
-	width: 440px;
-	margin: 0 0 0 230px;
-	padding: 120px 0 60px 0;
 	text-align: left;
 }
 
@@ -88,11 +80,11 @@ h2 {
 	margin-top: 0;
 }
 
-#main img {
+.main img {
 	width: 100px;
 }
 
-#main div {
+.main div {
 	float: left;
 	margin-bottom: 20px;
 }
@@ -103,4 +95,38 @@ h2 {
 
 .con {
 	margin-left: 20px;
+}
+
+
+
+@media (min-width: 768px) {
+	#container {
+		width: $container-tablet-width;
+	}
+}
+
+@media (min-width: 992px) { 
+	#container {
+		width: $container-desktop-width;
+		padding: 0 100px;
+	}
+
+	.sidebar {
+		float: left;
+	}
+
+	.main {
+		width: 540px;
+		float: left;
+	}
+
+	.footer {
+		width: 440px;
+		margin: 0 0 0 230px;
+		padding: 120px 0 60px 0;
+	}
+}
+
+@media (min-width: 1200px) { 
+
 }
