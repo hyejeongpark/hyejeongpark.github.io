@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hyejeong Park</title>
-		<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/css/mystyle.css">
 
-	</head>
-	<body>
-		<div id="container">
-			<div class="sidebar">
-				<a href="/"><img src="/image/me.jpg"></a>
-				<a href="/"><h3>Hyejeong Park</h3></a>
-				<ul>
-					<li><a href="/">home</a></li>
-					<li><a href="/about">about</a></li>
-					<li><a href="/works">works</a></li>
-					<li><a href="/blog">blog</a></li>
-				</ul>
-			</div>
-			{{ content }}
-			<div class="footer">
-				Copyright © 2015 Hyejeong Park. All rights reserved.
-			</div>
-		</div>
+ <head>
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
 
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	</body>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <a href="/"><img src="/image/me.jpg"></a>
+      <ul>
+        <li><a href="/works">works</a></li>
+        <li><a href="/blog">blog</a></li>
+        <li><a href="/archive">archive</a></li>
+      </ul>
+    </div>
+    {% if page.type == 'photo' %}
+    <div class="main photo">
+        
+    {% elsif page.type == 'article' %}
+    <div class="main article">
+
+    {% else %}
+    <div class="main">
+    {% endif %}
+      {{ content }}
+    </div>
+    <div class="footer">
+      <p>Copyright © 2015 Hyejeong Park. All rights reserved. / contact : phj1698@gmail.com</p>
+    </div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
 </html>

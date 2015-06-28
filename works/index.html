@@ -1,17 +1,29 @@
 ---
 layout: default
+title: works
+works:
+    - title: Atelier
+      description: Branding, UI
+      img_src: /image/atelier.jpg
+      url: /works/atelier.html
+    - title: Metapho
+      description: Branding, UI
+      img_src: /image/metapho.jpg
+    - title: SNUBOOKS
+      description: Web, UI
+      img_src: /image/metapho.jpg
 ---
 
-<div class="main">
-  <h2>Works</h2>
-  <div><img src="/image/atelier.jpg"></div>
-  <div class="con"><h3>Icon Design</h3><p>Atelier</p></div>
-  <div class="clear"></div>
-  <div class="clearfix">
-    <div><img src="/image/metapho.jpg"></div>
-    <div class="con">
-      <h3>Icon Design</h3>
-      <p>Metapho</p>
-    </div>
-  </div>
+<h2>Works</h2>
+
+<div class="row">
+  {% for work in page.works %}
+  <a href="{{ work.url }}">
+    <article class="works col-sm-4 col-md-3">
+      <img src="{{ work.img_src }}">
+      <h3>{{ work.title }}</h3>
+      <p>{{ work.description }}</p>
+    </article>
+  </a>
+  {% endfor %}
 </div>
