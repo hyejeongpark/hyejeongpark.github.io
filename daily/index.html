@@ -1,0 +1,38 @@
+---
+layout: default
+title: daily
+daily:
+    - text_title: Sushi
+      text_content: 2014. pixel on Atelier.
+      img_src: /image/1.jpg
+
+    - text_title: 2014.pixel on Atelier.
+      text_content: 2014. pixel on Atelier.
+      img_src: /image/1.jpg
+
+    - text_title: 2014.pixel on Atelier.
+      text_content: 2014. pixel on Atelier.
+      img_src: /image/me.jpg
+---
+
+<div class="daily">
+  <ul class="img-list">
+    {% for day in page.daily %}
+    <li>
+      <a href="{{ day.img_src }}">
+        <img src="{{ day.img_src }}">
+        <div class="text-content">
+          <div>
+            <p>
+            <b> {{ day.text_title }} </b>
+            </p>
+            <p>
+                {{ day.text_content }}
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

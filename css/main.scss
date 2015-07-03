@@ -1,7 +1,8 @@
 ---
 ---
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
 
 html, body {
 	margin: 0;
@@ -59,10 +60,6 @@ html, body {
 .main {
   padding-bottom: 50px;
 
-  img {
-    width: 100%;
-  }
-
   div {
     margin-bottom: 20px;
   }
@@ -71,8 +68,59 @@ html, body {
 .works {
   margin-bottom: 40px;
 
+  h3 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    line-height: normal;
+    color: #303030;
+  }
+
   p {
-    color: #888;
+    color: #aaa;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+
+  img {
+    border: 1px solid #d5d5d5;
+  }
+}
+
+.daily {
+  img {
+    max-width: 400px;
+  }  
+}
+
+.img-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #d5d5d5;
+    margin: 0 15px 15px 0;
+  }
+
+  div.text-content {
+    background: rgba(255,255,255,0.9);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+  li:hover div.text-content {
+    opacity: 1;
+  }
+
+  .text-content div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -84,8 +132,20 @@ html, body {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .works {
+    img {
+      width: 230px;
+    }
+  }
+}
 
+@media (min-width: 768px) {
+  .works {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media (min-width: 992px) { 
