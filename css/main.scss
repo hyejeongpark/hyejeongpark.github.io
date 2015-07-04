@@ -46,10 +46,6 @@ html, body {
 			text-decoration: none;
 			color: #aaa;
 
-			&:visited{
-				color: #aaa;	
-			}
-
 			&:hover {
 				color: black;
 			}
@@ -84,15 +80,30 @@ html, body {
   img {
     border: 1px solid #d5d5d5;
   }
+
+  &:hover {
+    img {
+      opacity: 0.7;
+    }
+  }
+}
+
+.blog {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 55px 0;
+
+    a {
+      color: black;
+    }
+  }
 }
 
 .daily {
-  img {
-    max-width: 400px;
-  }  
-}
-
-.img-list {
   list-style-type: none;
   padding: 0;
 
@@ -101,6 +112,10 @@ html, body {
     position: relative;
     border: 1px solid #d5d5d5;
     margin: 0 15px 15px 0;
+  }
+
+  img {
+    max-width: 400px;
   }
 
   div.text-content {
@@ -131,6 +146,24 @@ html, body {
   height: 50px;
   width: 100%;
 }
+
+a.active {
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+
+      &:visited{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;  
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+      }
+    }
 
 @media (max-width: 768px) {
   .works {

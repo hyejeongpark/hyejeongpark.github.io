@@ -15,9 +15,23 @@
     <div class="navbar">
       <a href="/"><img src="/image/me.jpg"></a>
       <ul>
-        <li><a href="/works">works</a></li>
-        <li><a href="/blog">blog</a></li>
-        <li><a href="/daily">daily</a></li>
+        {% if page.active == "works" %}
+            <li><a class="active" href="/works">works</a></li>
+        {% else %}
+            <li><a href="/works">works</a></li>
+        {% endif %}
+
+        {% if page.active == "blog" %}
+            <li><a class="active" href="/blog">blog</a></li>
+        {% else %}
+            <li><a href="/blog">blog</a></li>
+        {% endif %}
+
+        {% if page.active == "daily" %}
+            <li><a class="active" href="/daily">daily</a></li>
+        {% else %}
+            <li><a href="/daily">daily</a></li>
+        {% endif %}
       </ul>
     </div>
     {% if page.type == 'photo' %}

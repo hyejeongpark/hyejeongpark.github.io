@@ -1,6 +1,7 @@
 ---
 layout: default
 title: daily
+active: daily
 daily:
     - text_title: Sushi
       text_content: 2014. pixel on Atelier.
@@ -15,8 +16,7 @@ daily:
       img_src: /image/me.jpg
 ---
 
-<div class="daily">
-  <ul class="img-list">
+  <ul class="daily">
     {% for day in page.daily %}
     <li>
       <a href="{{ day.img_src }}">
@@ -35,4 +35,3 @@ daily:
     </li>
     {% endfor %}
   </ul>
-</div>
