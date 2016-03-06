@@ -1,4 +1,4 @@
 
 # My Website
 
-visit [my site](http://hyejeongpark.github.io).
+visit [my wonderful site](http://hyejeongpark.github.io).
