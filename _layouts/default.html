@@ -2,7 +2,7 @@
 <html>
 
  <head>
-  <title>{{ page.title }} - {{ site.title }}</title>
+  <title>{{ site.title }}</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,44 +11,12 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="navbar">
-      <a href="/"><img src="/image/me.jpg"></a>
-      <ul>
-        {% if page.active == "works" %}
-            <li><a class="active" href="/works">works</a></li>
-        {% else %}
-            <li><a href="/works">works</a></li>
-        {% endif %}
-
-        {% if page.active == "blog" %}
-            <li><a class="active" href="/blog">blog</a></li>
-        {% else %}
-            <li><a href="/blog">blog</a></li>
-        {% endif %}
-
-        {% if page.active == "daily" %}
-            <li><a class="active" href="/daily">daily</a></li>
-        {% else %}
-            <li><a href="/daily">daily</a></li>
-        {% endif %}
-      </ul>
-    </div>
-    {% if page.type == 'photo' %}
-    <div class="main photo">
-        
-    {% elsif page.type == 'article' %}
-    <div class="main article">
-
-    {% else %}
-    <div class="main">
-    {% endif %}
-      {{ content }}
-    </div>
-    <div class="footer">
-      <p>Copyright © 2015 Hyejeong Park. All rights reserved. / contact : phj1698@gmail.com</p>
-    </div>
-  </div>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>© 2015 Hyejeong Park</p>
+  </footer>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
