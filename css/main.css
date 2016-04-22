@@ -1,4 +1,14 @@
 body {
   margin: 30px; }
 
+section {
+  margin-bottom: 30px; }
+
+.profile-picture {
+  width: 300px; }
+
+@media screen and (min-width: 768px) {
+  .profile-picture {
+    width: 500px; } }
+
 /*# sourceMappingURL=main.css.map */
