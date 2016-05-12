@@ -5,31 +5,70 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <script src="https://use.fontawesome.com/0e58078604.js"></script>
 </head>
 
 <body>
-  <main>
-    <img src="./image/profile.jpg" class="profile-picture">
-    <section>
-      <h1>Hyejeong Park</h1>
-      <p>Live in Seoul, Korea<br>
-      Major in Visual Design at Seoul National University</p>
-    </section>
-    <section>
-      <p>Web / UI / UX</p>
-      <p>Main Designer at Zininworks 2013-2014</p>
-    </section>
-    <section>
-      <p>Mail : iam@hyejeong-park.com</p>
-      <p>Github : <a href="https://github.com/hyejeongpark">https://github.com/hyejeongpark</a></p>
-    </section>
-  </main>
-  <footer>
-    <p>© 2015 Hyejeong Park</p>
-  </footer>
+  <header>
+    <div class="container">
+      <section class="basic">
+        <div class="profile-img">
+          <img src="./image/profile.png" alt="Profile picture" class="profile-picture">
+        </div>
+        <div class="description">
+          <h1>Hyejeong Park</h1>
+          <p><a href="mailto:iam@hyejeong-park.com">iam@hyejeong-park.com</a></p>
+          <hr>
+          <p>Design, Devlope, Draw in Seoul, Korea.<br>
+            Love to make cool stuff.</p>
+          <a href="https://github.com/hyejeongpark" class="fa fa-github fa-2x"></a>
+          <a href="https://twitter.com/hj_1027" class="fa fa-twitter fa-2x"></a>
+          <a href="https://www.facebook.com/hyejeong.park.9678" class="fa fa-facebook-official fa-2x"></a>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="education">
+        <h2>Education</h2>
+        <p>Major in Visual Design at Seoul National University</p>
+      </section>
+
+      <section class="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li><a href="http://zininworks.com/">Zininworks</a> Designer 2013-2014</li>
+        </ul>
+      </section>
+
+      <section class="interest">
+        <h2>Interest</h2>
+        <ul>
+          <li>UI, UX</li>
+          <li>HTML, CSS, SASS</li>
+          <li>Python, Django</li>
+        </ul>
+      </section>
+
+<!--       <section class="work">
+        <h2>Work</h2>
+        <div>work1</div>
+        <div>work2</div>
+      </section> -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <section class="footer">
+        <p>© 2015 Hyejeong Park</p>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>
