@@ -43,7 +43,7 @@ header {
 }
 
 main {
-  margin: 60px 10px;
+  margin: 60px 10px 0 10px;
 }
 
 main .container section {
@@ -52,6 +52,21 @@ main .container section {
 
 main .container section h2 {
   font-weight: 700;
+}
+
+.work {
+  margin-bottom: 50px;
+}
+
+.work img {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #bbb;
+  margin: 15px 0;
+}
+
+.work-title {
+  font-size: 1.5rem;
 }
 
 footer {
@@ -65,6 +80,7 @@ a:hover {
 hr {
   border-color: #ADA1C1;
 }
+
 
 @media screen and (min-width: 768px) {
   .basic {
