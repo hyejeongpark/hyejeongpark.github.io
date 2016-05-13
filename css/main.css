@@ -58,7 +58,7 @@ main .container section h2 {
   margin-bottom: 50px;
 }
 
-.work img {
+.work-img {
   width: 100%;
   max-width: 400px;
   border: 1px solid #bbb;
@@ -69,8 +69,16 @@ main .container section h2 {
   font-size: 1.5rem;
 }
 
+.work-description {
+  color: #888;
+}
+
 footer {
-  margin: 10px;
+  background-color: #E5E3E6;
+}
+
+footer p {
+  padding: 30px 0px 15px 10px;
 }
 
 a:hover {
@@ -101,5 +109,9 @@ hr {
 
   .profile-picture {
     float: left;
+  }
+
+  footer p {
+    padding-left: 0;
   }
 }
