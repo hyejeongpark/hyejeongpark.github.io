@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.title {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.title img {
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #bbb;
+  border-radius: 50px;
+}
+
+.year, .description {
+  color: #aaa;
+  margin-top: -10px;
+}
+
+.content {
+  text-align: center;
+}
+
+hr {
+  margin-bottom: 40px;
+}
+
+.content img {
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
