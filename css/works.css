@@ -31,7 +31,14 @@ hr {
 
 .content img {
   width: 100%;
-  max-width: 480px;
   margin-bottom: 30px;
-  display: inline-block;
+  border: 1px solid #bbb;
+}
+
+.atelier img{
+  max-width: 480px;
+}
+
+.metapho img{
+  max-width: 400px;
 }
