@@ -35,10 +35,14 @@ hr {
   border: 1px solid #bbb;
 }
 
-.atelier img{
+.atelier img {
   max-width: 480px;
 }
 
 .metapho img{
   max-width: 400px;
+}
+
+.ksib img {
+  max-width: 600px;
 }
