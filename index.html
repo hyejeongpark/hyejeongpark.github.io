@@ -2,22 +2,34 @@
 layout: default
 ---
 
-<div class="home">
+<div class="row">
+  <div class="col-md-7 pull-md-right">
+    <img src="/image/profile_2x.png">
+  </div>
+  <div class="col-md-5">
+    <h1>Hyejeong Park</h1>
+    <p><a href="mailto:{{ site.email }}">iam@hyejeong-park.com</a></p>
+    <p>Design, Develop, Draw in Seoul, Korea.<br>
+       Love to make cool stuff.</p>
+    <a href="https://github.com/hyejeongpark" class="fa fa-github fa-2x"></a>
+    <a href="https://twitter.com/hj_1027" class="fa fa-twitter fa-2x"></a>
+    <a href="https://www.facebook.com/hyejeong.park.9678" class="fa fa-facebook-official fa-2x"></a>
 
-  <h1 class="page-heading">Posts</h1>
+    <h2>Education</h2>
+    <p>Major in Visual Design at Seoul National University</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <h2>Experience</h2>
+      <ul>
+        <li><a href="http://zininworks.com/">Zininworks</a> Designer 2013-2014</li>
+      </ul>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    <h2>Interests</h2>
+      <ul>
+        <li>UI, UX</li>
+        <li>HTML, CSS</li>
+        <li>Sass</li>
+        <li>JavaScript, jQuery</li>
+        <li>Python, Django</li>
+      </ul>
+  </div>
 </div>
