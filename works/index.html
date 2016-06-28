@@ -1,0 +1,49 @@
+---
+layout: default
+title: Works
+works:
+  - title: Atelier
+    description: Brand, UI design for iOS app Atelier
+    img_src: /image/atelier_thumb.png
+    url: /atelier.html
+  - title: Metapho
+    description: Brand, UI design for iOS app Metapho
+    img_src: /image/metapho_thumb.png
+    url: /metapho.html
+  - title: Tripic
+    description: Responsive Web
+    img_src: /image/metapho_thumb.png
+    url:
+  - title: Sushi
+    description: Digital Drawing
+    img_src: /image/sushi_thumb.jpg
+    url: /sushi.html
+  - title: Python & Django
+    description: Illustration
+    img_src: /image/py-dj_thumb.png
+    url: /py-dj.html
+  - title: Ruby & Rails
+    description: Illustration
+    img_src: /image/ru-ra_thumb.png
+    url: /ra-ra.html
+  - title: Drawing diary
+    description: Python, Django
+    img_src: /image/drawingdiary_thumb.png
+    url: /drawingdiary.html
+---
+
+<div class="row">
+  {% for work in page.works %}
+  <article class="col-sm-6 col-md-4">
+    <a href="{{ work.url }}">
+      <figure>
+        <img class="img-responsive" src="{{ work.img_src }}" alt="{{ work.title }}">
+        <figcaption>
+          <strong>{{ work.title }}</strong>
+          <p class="icon-links">{{ work.description }}</p>
+        </figcaption>
+      </figure>
+    </a>
+  </article>
+  {% endfor %}
+</div>
