@@ -1,17 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
-  font-family: 'HelveticaNeue', Helvetica, Sans-serif;
+  font-family: 'Lato', 'HelveticaNeue', Helvetica, Sans-serif;
   margin-bottom: 100px;
-  background: #fcfcfc;
+  background: #fafafa;
 }
 
 nav {
   font-weight: bold;
-  background: #fcfcfc;
+  background: #fafafa;
 /*  border-bottom: 1px solid #dcdcdc;*/
 }
 
@@ -29,6 +31,7 @@ section {
 
 section h1 {
   font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 section h2 {
@@ -36,8 +39,13 @@ section h2 {
   font-weight: bold;
 }
 
-section p {
+.index h1 {
+  font-size: 3rem;
+}
+
+.index p {
   color: #999;
+  margin-top: 20px;
 }
 
 article {

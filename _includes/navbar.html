@@ -1,14 +1,14 @@
-<nav class="navbar navbar-full">
+<nav class="navbar navbar-full navbar-light">
   <div class="container container-max-width">
     <a class="navbar-brand" href="{{ site.baseurl }}/">HJ PARK</a>
     <ul class="nav navbar-nav pull-xs-right">
-      <li class="nav-item">
-        <a class="nav-link" href="/about">about</a>
+      <li class="nav-item {% if page.url == '/about/' %} active {% endif %}">
+        <a class="nav-link" href="/about/">about</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/works">works</a>
+      <li class="nav-item {% if page.url == '/works/' %} active {% endif %}">
+        <a class="nav-link" href="/works/">works</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item {% if page.url == '/blog/' %} active {% endif %}">
         <a class="nav-link disabled" href="#" >blog</a>
       </li>
     </ul>
