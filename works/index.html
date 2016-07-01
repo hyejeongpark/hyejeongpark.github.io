@@ -3,33 +3,33 @@ layout: default
 title: Works
 works:
   - title: Atelier
-    description: Brand, UI design for iOS app Atelier
+    subtitle: Brand, UI design for iOS app Atelier
     img_src: /image/atelier_thumb.png
     url: /works/atelier.html
   - title: Metapho
-    description: Brand, UI design for iOS app Metapho
+    subtitle: Brand, UI design for iOS app Metapho
     img_src: /image/metapho_thumb.png
     url: /works/metapho.html
   - title: Tripic
-    description: Responsive Web
+    subtitle: Responsive Web
     img_src: /image/tripic_thumb.png
-    url: http://tripic.hyejeong-park.com
+    url: /works/tripic.html
   - title: Sushi
-    description: Digital Drawing
+    subtitle: Digital Drawing
     img_src: /image/sushi_thumb.jpg
-    url: /sushi.html
+    url: /works/sushi.html
   - title: Python & Django
-    description: Illustration
+    subtitle: Illustration
     img_src: /image/py-dj_thumb.png
-    url: /py-dj.html
+    url: /works/py-dj.html
   - title: Ruby & Rails
-    description: Illustration
+    subtitle: Illustration
     img_src: /image/ru-ra_thumb.png
-    url: /ra-ra.html
+    url: /works/ru-ra.html
   - title: Drawing diary
-    description: Python, Django
+    subtitle: Python, Django
     img_src: /image/drawingdiary_thumb.png
-    url: /drawingdiary.html
+    url: /works/drawingdiary.html
 ---
 
 <div class="row">
@@ -40,7 +40,7 @@ works:
         <img class="img-responsive" src="{{ work.img_src }}" alt="{{ work.title }}">
         <figcaption>
           <strong>{{ work.title }}</strong>
-          <p class="icon-links">{{ work.description }}</p>
+          <p class="icon-links">{{ work.subtitle }}</p>
         </figcaption>
       </figure>
     </a>
@@ -52,7 +52,7 @@ works:
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header border-none">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

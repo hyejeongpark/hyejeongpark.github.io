@@ -25,16 +25,16 @@ img {
   max-width: 100%;
 }
 
-section {
+.list-view {
   margin-bottom: 70px;
 }
 
-section h1 {
+.list-view h1 {
   font-size: 2.5rem;
   margin-bottom: 50px;
 }
 
-section h2 {
+.list-view h2 {
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -91,6 +91,33 @@ footer {
 
 footer p {
   margin-top: 30px;
+}
+
+.border-none {
+  padding-bottom: 0;
+  border: none;
+}
+
+.modal-body {
+  padding-bottom: 40px;
+}
+
+.modal-main {
+  text-align: center;
+}
+
+.modal-main h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.modal-main img {
+  border-radius: 3px;
+}
+
+.modal-main .description {
+  color: #999;
+  margin-top: -10px;
 }
 
 @media (min-width: 1200px) {
