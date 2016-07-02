@@ -39,13 +39,21 @@ img {
   font-weight: bold;
 }
 
+.index {
+  margin-top: 30px;
+}
+
 .index h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .index p {
   color: #999;
   margin-top: 20px;
+}
+
+.sm-margin-side {
+  margin: 0 1rem;
 }
 
 article {
@@ -98,12 +106,9 @@ footer p {
   border: none;
 }
 
-.modal-body {
-  padding-bottom: 40px;
-}
-
 .modal-main {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .modal-main h1 {
@@ -118,6 +123,26 @@ footer p {
 .modal-main .description {
   color: #999;
   margin-top: -10px;
+}
+
+.modal-description {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.modal-description img {
+  border: 1px solid #bbb;
+  margin-top: 20px;
+}
+
+@media (min-width: 544px) {
+  .index h1 {
+    font-size: 3rem;
+  }
+
+  .sm-margin-side {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1200px) {
