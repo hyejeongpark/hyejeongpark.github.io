@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Lato', 'HelveticaNeue', Helvetica, Sans-serif;
+  margin-bottom: 100px;
+  background: #fafafa;
+}
+
+nav {
+  font-weight: bold;
+  background: #fafafa;
+/*  border-bottom: 1px solid #dcdcdc;*/
+}
+
+.container-space {
+  margin-top: 50px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.list-view {
+  margin-bottom: 70px;
+}
+
+.list-view h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.list-view h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.index {
+  margin-top: 30px;
+}
+
+.index h1 {
+  font-size: 2.5rem;
+}
+
+.index p {
+  color: #999;
+  margin-top: 20px;
+}
+
+.sm-margin-side {
+  margin: 0 1rem;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+figure {
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  padding: 10px;
+  background: white;
+  position: relative;
+}
+
+figcaption {
+  /*display: none;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  padding: 20px;
+  background: rgba(255,255,255,0.85);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: #ddd;
+}
+
+footer p {
+  margin-top: 30px;
+}
+
+.border-none {
+  padding-bottom: 0;
+  border: none;
+}
+
+.modal-main {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-main h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.modal-main img {
+  border-radius: 3px;
+}
+
+.modal-main .description {
+  color: #999;
+  margin-top: -10px;
+}
+
+.modal-description {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.modal-description img {
+  border: 1px solid #bbb;
+  margin-top: 20px;
+}
+
+@media (min-width: 544px) {
+  .index h1 {
+    font-size: 3rem;
+  }
+
+  .sm-margin-side {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-max-width {
+    max-width: 940px;
+  }
+}
