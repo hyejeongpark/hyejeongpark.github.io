@@ -3,15 +3,18 @@ layout: default
 title: Blog
 ---
 
-<div class="home">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%d %b %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="container">
+  <div class="row">
+    <ul class="post-list col-md-10 col-md-offset-1">
+      {% for post in site.posts %}
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <li>
+            <p class="post-date">{{ post.date | date: "%d %b %Y" }}</p>
+            <h2 class="post-title">{{ post.title }}</h2>
+            <p class="post-description">{{ post.description }}</p>
+          </li>
+        </a>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

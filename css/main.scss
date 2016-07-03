@@ -23,6 +23,7 @@ a {
 
 a:hover {
   color: $link-color * 0.7;
+  text-decoration: none;
 }
 
 nav {
@@ -151,6 +152,51 @@ footer p {
 
 .border-none img {
   border: none;
+}
+
+.post-list li {
+  list-style: none;
+  background: white;
+  padding: 45px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  opacity: 1;
+  border: 1px solid #eaeaea;
+}
+
+.post-list li:hover {
+  opacity: 0.7;
+  background: #eaeaea;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.post-date {
+  margin-bottom: 0.5rem;
+  color: #999;
+}
+
+.post-title {
+  color: black;
+  margin-left: -1px;
+  font-weight: bold;
+}
+
+.post-description {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  color: #777;
+}
+
+.post-content {
+  margin-top: 3.5rem;
+  color: #555;
+}
+
+.post {
+  padding: 30px;
 }
 
 @media (min-width: 544px) {
