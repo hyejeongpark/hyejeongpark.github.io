@@ -1,7 +1,10 @@
 ---
 ---
 
+$link-color: #08b9bb;
+
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
 html {
   position: relative;
@@ -9,9 +12,17 @@ html {
 }
 
 body {
-  font-family: 'Lato', 'HelveticaNeue', Helvetica, Sans-serif;
+  font-family: 'Lato', 'Spoqa Han Sans', 'HelveticaNeue', Helvetica, Sans-serif;
   margin-bottom: 100px;
   background: #fafafa;
+}
+
+a {
+  color: $link-color;
+}
+
+a:hover {
+  color: $link-color * 0.7;
 }
 
 nav {
@@ -136,6 +147,10 @@ footer p {
 .modal-description img {
   border: 1px solid #bbb;
   margin-top: 20px;
+}
+
+.border-none img {
+  border: none;
 }
 
 @media (min-width: 544px) {
