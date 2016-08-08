@@ -115,15 +115,6 @@ footer {
   }
 }
 
-.border-none {
-  padding-bottom: 0;
-  border: none;
-
-  img {
-    border: none;
-  }
-}
-
 .modal-main {
   text-align: center;
   margin-bottom: 40px;
@@ -150,6 +141,15 @@ footer {
   img {
     border: 1px solid #bbb;
     margin-top: 20px;
+  }
+}
+
+.border-none {
+  padding-bottom: 0;
+  border: none;
+
+  img {
+    border: none;
   }
 }
 
