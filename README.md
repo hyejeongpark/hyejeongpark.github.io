@@ -1,4 +1,3 @@
+# Portfolio
 
-# My Website
-
-visit [my site](http://hyejeongpark.github.io).
+[hyejeong-park.com](http://hyejeongpark.github.io).
