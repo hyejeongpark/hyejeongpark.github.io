@@ -27,6 +27,11 @@ a {
   }
 }
 
+code {
+  background-color: #adabab;
+  color: white;
+}
+
 img {
   max-width: 100%;
 }
@@ -34,6 +39,21 @@ img {
 nav {
   font-weight: bold;
   background: #fafafa;
+}
+
+.footnotes {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 40px;
+  color: #888;
+
+  ol {
+    padding-left: 15px;
+
+    li p {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 .container-space {
